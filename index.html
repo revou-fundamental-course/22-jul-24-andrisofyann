@@ -3,10 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <title>Travel Geh</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="
+    sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Travel Geh</a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#destinasi" class="mennu-btn">Destinasi</a></li>
+                <li><a href="#paket-wisata" class="mennu-btn">Paket Wisata</a></li>
+                <li><a href="#kontak" class="mennu-btn">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Travel Geh</h1>
+         
+    </header>
+    <main>
+        <section class="destinasi" id="destinasi">
+            <h2>Destinasi Populer</h2>
+            <div class="destinasi-item" id="destinasi-item">
+                <img src="assets/banner1.jpg" alt="Destinasi 1">
+                <h3>Destinasi 1</h3>
+                <p>Lion City Singapure</p>
+                <button>Detail</button>
+            </div>
+            <div class="destinasi-item">
+                <img src="assets/banner2.jpg" alt="Destinasi 1">
+                <h3>Destinasi 2</h3>
+                <p>Bali Indonesia</p>
+                <button>Detail</button>
+            </div>
+            <div class="destinasi-item">
+                <img src="assets/banner3.jpg" alt="Destinasi 1">
+                <h3>Destinasi 3</h3>
+                <p>Paris City france</p>
+                <button>Detail</button>
+            </div>
+        </section>
+        <section class="paket-wisata" id="paket-wisata">
+            <h2>Paket Wisata</h2>
+            <div class="paket-wisata-container">
+                <div class="paket-wisata-item">
+                    <img class="slide" src="assets/banner1.jpg" alt="Paket-wisata 1">
+                    <img class="slide" src="assets/banner2.jpg" alt="Paket-wisata 1">
+                    <h3>Paket 1</h3>
+                    <p>Harga: $500</p>
+                    <p>Durasi: 5 Hari</p>
+                    <p>Destinasi: Destinasi 1, Destinasi 2</p>
+                    <button><a href="#" style="color: white; text-decoration: none">Beli Sekarang</a></button>
+                </div>
+                <div class="paket-wisata-item">
+                    <img class="slide" src="assets/banner2.jpg" alt="Paket-wisata 2">
+                    <img class="slide" src="assets/banner3.jpg" alt="Paket-wisata 3">
+                    <h3>Paket 2</h3>
+                    <p>Harga: $700</p>
+                    <p>Durasi: 7 Hari</p>
+                    <p>Destinasi: Destinasi 2, Destinasi 3</p>
+                    <button><a href="#" style="color: white; text-decoration: none">Beli Sekarang</a></button>
+                </div>
+                <div class="paket-wisata-item">
+                    <img class="slide" src="assets/banner1.jpg" alt="Paket-wisata 1">
+                    <img class="slide" src="assets/banner3.jpg" alt="Paket-wisata 3">
+                    <h3>Paket 3</h3>
+                    <p>Harga: $900</p>
+                    <p>Durasi: 10 Hari</p>
+                    <p>Destinasi: Destinasi 1, Destinasi 3</p>
+                    <button><a href="#" style="color: white; text-decoration: none">Beli Sekarang</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="kontak" id="kontak">
+            <h2>Hubungi Kami</h2>
+            <div class="kontak-container">
+                <div class="kontak-info">
+                    <div class="kontak-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="kontak-text">
+                            <p>Alamat :</p>
+                            <p>3456 Jalan Pematang Awi, Lampung</p>
+                        </div>
+                    </div>
+                    <div class="kontak-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="kontak-text">
+                            <p>Telepon :</p>
+                            <p>123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="kontak-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="kontak-text">
+                            <p>Email :</p>
+                            <p>travelgeh@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kontak-form">
+                    <h3>Kirim Pesan</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" id="input-name" placeholder="Nama Anda">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="input-email" placeholder="Email Anda">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="input-pesan" placeholder="Pesan Anda" rows="4"></textarea>
+                        </div>
+                        <button type="submit" onclick="formvalidation() ">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Andri Sofyan 2024 Travel Geh</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
